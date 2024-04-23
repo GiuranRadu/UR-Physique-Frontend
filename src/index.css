@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* @import url('https://fonts.googleapis.com'); */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary Colors */
+  --primary-light: #566573;
+  --primary-color: #2c3e50;
+  --primary-dark: #1b2631;
+
+  /* Secondary Colors */
+  --secondary-light: #5fa8d3;
+  --secondary-color: #3498db;
+  --secondary-dark: #1e6a9e;
+
+  /* Accent Colors */
+  --accent-light: #f2928d;
+  --accent-color: #e74c3c;
+  --accent-dark: #b53127;
+
+  /* Neutrals */
+  --neutral-light: #ecf0f1;
+  --neutral-medium: #bdc3c7;
+  --neutral-dark: #7f8c8d;
+
+  /* Additional Colors */
+  --success-color: #27ae60;
+  --warning-color: #f39c12;
+  --info-color: #16a085;
+  --danger-color: #c0392b;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  background-color: var( --primary-light);
+  font-family: "Ubuntu";
+  color: var( --neutral-light)
+}
+
+a {
+  text-decoration: none;  
+  color:var( --neutral-medium)
+}

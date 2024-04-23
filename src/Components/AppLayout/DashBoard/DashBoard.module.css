@@ -1,0 +1,292 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.section1 {
+  display: grid;
+  height: 90vh;
+  grid-template-columns: 1.5fr 2fr;
+  /* background-color: rgb(189, 189, 189); */
+  background-color: var(--neutral-medium);
+
+
+}
+
+.section1-left,
+.section1-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.section1-left {
+  background-image: url('../../../Assets/hero.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 1000px;
+  /* position: relative; */
+}
+
+.section1-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 0 200px 200px;
+}
+
+.section1-right h2 {
+  font-size: 35px;
+  text-shadow: 0px 0px 5px black;
+  /* color: var(--neutral-color); */
+  color: var(--neutral-medium);
+  font-style: italic;  
+}
+
+.section1-right>h1 {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 80px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0px 0px 3px black;
+  color: var(--primary-color);
+  text-decoration: underline;
+  font-style: italic;
+
+}
+
+.section1-right button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 250px;
+  margin-top: 50px;
+  padding: 15px 20px;
+  box-shadow: 5px 3px 7px rgb(56, 56, 56);
+  border: none;
+  border-radius: 4px;
+  transition: 1s;
+  cursor: pointer;
+  font-weight: 600;
+  /* background-color: var(--primary-color);
+  color: var(--neutral-medium); */
+  background-color: var(--neutral-light);
+  color:var(--accent-color);
+}
+
+.section1-right button:hover {
+  scale: 1.1;
+  transition: 1s;
+
+
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgb(189, 189, 189); */
+  background-color: var(--neutral-medium);  
+  height: 130vh;
+}
+
+.progression-workout-nutritions {
+  height: 300px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: -150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 10px;
+}
+
+.board {
+  display: grid;
+  grid-template-rows: 20% 40% 30%;
+  height: 100%;
+  padding: 30px;
+  background-color: var(--primary-color);
+  color: var(--neutral-light);
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 1px 2px 15px 0.4px black;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.board:hover {
+  background-image: url('../../../Assets/sport-difficult.png');
+  background-size: cover;
+  transition: 1s;
+  box-shadow: 1px 2px 15px 0.4px white;
+  scale: 1.02
+}
+
+.board>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board>div>img {
+  height: 60px;
+  width: 60px;
+}
+
+.board>div>h1 {
+  font-size: 25px;
+  font-weight: 500;
+  text-shadow: 0px 0px 7px rgb(101, 101, 101);
+
+}
+
+.board>div>p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.section2-lower-div {
+  height: 1000px;
+  display: flex;
+  padding: 50px 100px;
+}
+
+.left {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+}
+
+.left1 {
+  height: 40%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left1 h2 {
+  background-color: var(--primary-color);
+  color: var(--neutral-medium);
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.left1>h1 {
+  font-size: 40px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-shadow: 0px 0px 2px black;
+}
+
+.left1>p {
+  font-size: 14px;
+  color: var(--neutral-dark);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+
+.left2 {
+  height: 40%;
+  display: flex;
+  gap: 10px;
+}
+
+
+.left2>div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  width: 33%;
+  background-color: var(--neutral-dark);
+
+  border-radius: 10px;
+}
+
+.left2>div>h2 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.left2>div>img {
+  width: 50%;
+}
+
+.left3 {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left3 button {
+  width: 250px;
+  border: none;
+  padding: 15px 20px;
+  box-shadow: 5px 3px 7px rgb(56, 56, 56);
+  border-radius: 4px;
+  transition: 1s;
+  cursor: pointer;
+  font-weight: 600;
+  color: whitesmoke;
+  background-color: var(--primary-color);
+  color: var(--neutral-medium);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.left3 button:hover {
+  scale: 1.1;
+  transition: 1s;
+}
+
+
+.right {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right img {
+  height: 80%;
+  transition: 1s;
+  /* filter:blur(5px) */
+  /* filter:grayscale(100%) */
+  z-index: 1;
+
+}
+
+.right img:hover {
+  scale: 1.1;
+  transition: 1s;
+  /* filter:blur(0px) */
+  /* filter:grayscale(0%); */
+}
+
+.section3 {
+  height: 50vh;
+
+}
+
+.section4 {
+  height: 110vh;
+  background-color: rgb(189, 189, 189);
+}

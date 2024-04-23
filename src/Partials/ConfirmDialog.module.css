@@ -1,0 +1,62 @@
+.container {
+  /* background-color: red; */
+  margin-top: -80px;
+  /* width: 70%;
+  height: 60%; */
+  
+}
+
+.DialogContent {
+  background-color: var(--primary-color);
+  height: 100%;
+  min-width:fit-content;
+  padding: 40px 60px 0px 60px !important;
+  border-radius: 4px !important;
+  margin: 1px;
+}
+
+
+.DialogTitle {
+  /* background-color: blue; */
+  color: var(--neutral-light);
+  /* font-size: 50px !important; */
+  height: 30px;
+  font-weight: 600 !important;
+  padding: 0 !important;
+}
+
+.Typography {
+  /* background-color: violet; */
+  height: 35px;
+  /* font-size: 12px !important; */
+  color: var(--neutral-dark);
+}
+
+.DialogActions {
+  /* background-color: red; */
+  height: 80px;
+  padding: 0 0 20px 0;
+  display: flex;
+  align-items: flex-start !important;
+  justify-content: center !important;
+}
+
+.DialogActions>button {
+  /* background-color: green; */
+  padding: 10px 20px;
+  width: 100px;
+  border: none;
+  font-weight: 500;
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+.no-button {
+  color: var(--primary-dark)
+}
+
+.yes-button {
+  background-color: red;
+  color: var(--neutral-light);
+  font-weight: 600;
+}

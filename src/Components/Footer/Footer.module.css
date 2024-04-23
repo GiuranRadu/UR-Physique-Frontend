@@ -1,0 +1,106 @@
+.container {
+  background-color: var(--primary-dark);
+  height: 45vh;
+  padding: 20px 100px;
+  display: flex;
+  gap: 20px;
+  color: var(--neutral-medium)
+}
+
+.container>div {
+  height: 100%;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+}
+
+.left>p {
+  font-size: 15px;
+}
+
+.logo-div {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  height: 33%;
+  gap: 20px;
+}
+
+.logo-div img {
+  height: 80%;
+}
+
+.logo-div h1 {
+  font-size: 35px;
+  text-decoration: underline 2px;
+  color: var(--neutral-light)
+}
+
+.platforms {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  padding-right: 50%;
+  transition: 1s;
+  height: 100%;
+}
+
+.platform {
+  color: var(--secondary-dark);
+  transition: 1s;
+}
+
+.platform:hover {
+  color: var(--secondary-color);
+  scale: 1.5;
+  transition: 1s;
+}
+
+
+.center {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 80px;
+  width: 30%;
+
+}
+
+.center1 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  height: 33%;
+  gap: 20px;
+}
+
+.center1>h1 {
+  font-size: 35px;
+  text-decoration: underline 2px;  
+  color: var(--neutral-light);
+}
+
+.center>div>ul>li,
+.right>div>ul>li {
+  font-size: 15px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.center>div>ul>li:hover,
+.right>div>ul>li:hover {
+  color: var( --secondary-light);
+  font-weight: bold;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 80px;
+  width: 30%;
+}
