@@ -3,13 +3,13 @@
   flex-direction: column;
 }
 
-.section1 { 
+.section1 {
   height: 90vh;
   background-size: 1000px;
   background-repeat: no-repeat;
-  background-position:  bottom right;
+  background-position: bottom right;
   background-color: var(--neutral-medium);
-  background-image: url('../../../Assets/hero.png'); 
+  background-image: url('../../../Assets/hero.png');
 }
 
 
@@ -277,10 +277,10 @@
 
 @media(max-width:1200px) {
 
-  .section1 {   
-    background-size: 800px;    
-    background-position: right bottom;   
-  }  
+  .section1 {
+    background-size: 800px;
+    background-position: right bottom;
+  }
 
   .section2 {
     height: 200vh;
@@ -337,6 +337,13 @@
 
 
 @media(max-width:850px) {
+
+  .section1 {
+    background-size: 600px;
+    background-position: right bottom;
+  }
+
+
   .section4 {
     height: 90vh;
   }
@@ -361,17 +368,21 @@
     padding: 50px;
   }
 
-  .left1 {
-    width: 700px
+  .left {
+    width: 100%;
+
   }
 
-  .left2 {
-    width: 400px;
+  .section2-lower-div {
+    position: relative
   }
 
   .right {
-    margin-right: -200px;
-    width: 400px;
+    position: absolute;
+    width: fit-content;
+    height: 800px;
+    top: -250px;
+    right:70px
   }
 
   .right img {
@@ -387,9 +398,9 @@
 
 @media(max-width:650px) {
 
-  .section1 {   
-    background-size: 600px;    
-    background-position: bottom left;   
+  .section1 {
+    background-size: 600px;
+    background-position: bottom left;
   }
 
   .right {
@@ -431,7 +442,7 @@
     height: 20px;
   }
 
-  .section2{
+  .section2 {
     height: 220vh;
   }
 
@@ -439,17 +450,17 @@
     padding: 20px;
   }
 
-  .left1 h1{
+  .left1 h1 {
     font-size: 20px;
   }
 
-  .left2{
+  .left2 {
     flex-direction: column;
-    height:fit-content;
+    height: fit-content;
     align-items: center;
   }
 
-  .left2>div{
+  .left2>div {
     width: 90%;
     padding: 20px;
     height: 150px;
@@ -459,17 +470,17 @@
     text-align: center;
     font-size: 15px;
   }
-  
+
   .left2>div>img {
     width: 30%;
   }
 
-  .left3{
+  .left3 {
     margin-top: 40px;
     height: 100%;
   }
 
-  .left3 button{
+  .left3 button {
     width: 200px;
   }
 }
