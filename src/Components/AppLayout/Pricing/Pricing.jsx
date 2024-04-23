@@ -26,7 +26,7 @@ function Pricing() {
     setConfirmDialog({
       isOpen: true,
       title: `Change to ${subscription} subscription ?`,
-      subtitle: "You will be redirected to the login page",
+      subtitle: "Your available activities will change",
       onConfirm: () => handleSubscription(subscription)
     })
   }
