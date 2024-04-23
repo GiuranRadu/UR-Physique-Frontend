@@ -53,11 +53,10 @@
 }
 
 .subscription-panel {
-  width: 1200px;
   min-height: 550px;
-  /* background-color: green; */
   display: flex;
   justify-content: space-around;
+  gap: 50px;
   padding: 20px;
   flex-wrap: wrap;
 }
@@ -71,7 +70,6 @@
   overflow: hidden;
   transition: 0.3s;
   background-color: var(--primary-color);
-
 }
 
 .subscription:hover {
@@ -178,4 +176,25 @@
   cursor: not-allowed;
   /* Example: change cursor to indicate it's disabled */
   /* Add any other styles you want for disabled buttons */
+}
+
+
+@media(max-width:1150px) {
+  .container {
+    padding: 50px  0 100px 0;
+  }
+}
+
+
+@media(max-width:550px) {
+  .subscription {
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+    background-color: var(--primary-color);
+  }
 }

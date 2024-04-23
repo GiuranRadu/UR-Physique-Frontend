@@ -14,7 +14,7 @@
   top: 10px
 }
 
-.fixed-back-button{
+.fixed-back-button {
   position: absolute;
   right: 10px;
   top: 10px;
@@ -30,7 +30,7 @@
   width: 130px;
 }
 
-.fixed-back-button:hover{
+.fixed-back-button:hover {
   border-color: #999;
 }
 
@@ -78,7 +78,6 @@
   font-size: 35px;
   padding: 5px 15px 0 15px;
   text-shadow: 0px 0px 7px black;
-
 }
 
 .selected-sport-div>h1>span {
@@ -195,8 +194,6 @@
   font-size: 25px;
   outline: none;
   border: 1px solid #999;
-
-
 }
 
 .time-div button:hover {
@@ -256,4 +253,129 @@
 .container2>p>a {
   color: var(--primary-dark);
   font-weight: 700;
+}
+
+
+@media(max-width:1250px) {
+  .selected-sport-div {
+    width: 700px;
+  }
+}
+
+
+@media(max-width:1050px) {
+  .selected-sport-div {
+    width: 700px;
+  }
+
+  .container1 {
+    padding-top: 60px;
+  }
+}
+
+
+@media(max-width:650px) {
+  .container1 {
+    padding-top: 60px;
+    align-items: flex-start;
+  }
+
+  .select-class,
+  .fixed-back-button {
+    padding: 8px 12px;
+    font-size: 10px;
+  }
+
+  .selected-sport-div {
+    height: fit-content
+  }
+
+  .selected-sport-div>h1 {
+    font-size: 25px;
+    padding: 0;
+  }
+
+  .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    padding: 5px 15px;
+  }
+
+  .carousel img {
+    height: 100%;
+  }
+
+  .finish-and-select {
+    width: 120px;
+    padding: 4px 10px;
+    font-size: 12px;
+    height: 34px;
+  }
+
+  .calories-burned {
+    font-size: 10px;
+    padding: 0;
+    margin: 10px 0 5px 0;
+  }
+
+  .choose-day-and-duration-div {
+    flex-direction: column;
+  }
+
+  .choose-day-and-duration-div>div {
+    width: 100%;
+  }
+
+  .arrow {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+
+@media(max-width:400px) {
+  .selected-sport-div>h1 {
+    font-size: 18px;
+    padding-bottom: 15px;
+  }
+
+  .selected-sport-div>h1>span {
+    font-size: 8px;
+  }
+
+  .carousel{
+    height: 150px;
+  }
+
+  .arrow {
+    width: 30px;
+    height: 30px;
+  }
+
+  .selected-sport-div {
+    padding: 20px;
+  }
+
+  .arrow-left {
+    left: 3px
+  }
+
+  .arrow-right {
+    right: 3px
+  }
+
+  .time-div button {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+  }
+
+  .time-div>p{
+    font-size: 14px;
+  }
 }

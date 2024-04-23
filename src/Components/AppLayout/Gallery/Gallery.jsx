@@ -8,7 +8,8 @@ import photo_hero from '../../../Assets/Photo-hero.png'
 import toast, { Toaster } from 'react-hot-toast';
 import { toastErrorObj, toastSuccessObj } from '../../../Utils/utilObjects'
 
-
+const API_URL = "https://ur-physique-backend.onrender.com"
+// const API_URL = "http://localhost:3000/upload"
 
 function Gallery() {
   const { isLoggedIn: { gallery, _id } } = useContext(AuthContext)
@@ -29,7 +30,7 @@ function Gallery() {
       let formData = new FormData();
       formData.append('picture', image)
 
-      const response = await fetch('http://localhost:3000/upload', {
+      const response = await fetch(`${API_URL}/upload`, {
         method: 'POST',
         headers: {
           Accept: 'application/json'
@@ -43,7 +44,7 @@ function Gallery() {
           description: description,
           picture: response.image_url
         }
-        await fetch('http://localhost:3000/gallery/addPictureToGallery', {
+        await fetch(`${API_URL}/gallery/addPictureToGallery`, {
           method: 'POST',
           headers: {
             Accept: 'application/json',

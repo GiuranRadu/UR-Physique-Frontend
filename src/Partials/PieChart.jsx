@@ -65,9 +65,7 @@ function PieChart({ daysObject }) {
 
 
   return (
-
     <canvas ref={chartRef} />
-
   )
 }
 

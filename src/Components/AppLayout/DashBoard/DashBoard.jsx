@@ -16,7 +16,6 @@ function DashBoard() {
     <div className={styles['container']}>
       <div className={styles.section1}>
         <div className={styles['section1-left']}>
-          {/* <img src={hero_pic} alt="" /> */}
         </div>
         <div className={styles['section1-right']}>
           <h2>Find your energy</h2>

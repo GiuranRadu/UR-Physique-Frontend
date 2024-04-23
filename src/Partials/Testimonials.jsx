@@ -51,7 +51,7 @@ function Testimonials() {
           </div>
           <div className={styles['text-div']}>
             <img src={quotes_pic} alt="quotes" />
-            <div >
+            <div className={styles['info-div']}>
               <p >{testimonials[userNo].testimonial}</p>
               <h1 >{testimonials[userNo].name}</h1>
               <h2 >{testimonials[userNo].occupation}</h2>

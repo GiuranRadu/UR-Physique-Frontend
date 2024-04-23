@@ -97,3 +97,154 @@
   background-color: red;
   color: white;
 }
+
+
+
+@media(max-width:1250px) {
+  .text-div {
+    padding: 30px 50px;
+    gap: 10px;
+    /* background-color: red; */
+  }
+
+  .text-div>img {
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .text-div>div>p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    height: 150px;
+    /* background-color: red; */
+  }
+
+  .text-div>div>h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  .text-div>div>h2 {
+    font-size: 16px;
+  }
+
+  .info-div {
+    height: 80%;
+    /* background-color: red; */
+  }
+
+}
+
+@media(max-width:950px) {
+
+  .container>h1{
+    padding: 0 0 20px 0;
+  }
+  .testimonials-div {
+    height: 400px;
+    padding: 10px;
+  }
+
+  .text-div>img {
+    height: 20px;
+    margin-bottom: 10px;
+  }
+
+  .text-div>div>p {
+    font-size: 10px;
+    margin-bottom: 15px;
+    height: 100px;
+    /* background-color: red; */
+  }
+
+  .text-div>div>h1 {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+
+  .text-div>div>h2 {
+    font-size: 12px;
+  }
+
+  .image-div {
+    min-width: 260px;
+  }
+
+
+}
+
+
+@media(max-width:650px) {
+  .testimonials-div {
+    height: 250px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .image-div {
+    min-width: 160px;
+  }
+
+  .text-div {
+    padding: 10px;
+  }
+
+  .text-div>img {
+    height: 10px;
+  }
+
+  .text-div>div>p {
+    font-size: 8px;
+    margin-bottom: 15px;
+    height: 70px;
+    /* background-color: red; */
+  }
+
+  .text-div>div>h1 {
+    font-size: 12px;
+  }
+
+  .buttons-div button {
+    font-size: 15px;
+    margin-right: 20px;
+    height: 20px;
+    width: 20px;   
+  }
+  
+}
+
+
+@media(max-width:420px) {
+
+  .container {
+    padding: 10px;
+  }
+  .testimonials-div {
+    height: 180px;
+    padding:2px;
+    width: 100%;
+  }
+
+  .image-div {
+    min-width: 100px;
+    overflow: hidden;
+  }
+
+  .image-div>img {
+    width: 100px;
+  }
+
+  .text-div>div>p {
+    font-size: 6px;
+    height: 50px;
+  }
+
+  .text-div {
+    padding:5px;
+    width: 100px;
+    gap: 0px;    
+
+  }
+
+
+}

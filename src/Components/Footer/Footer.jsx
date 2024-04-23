@@ -24,10 +24,19 @@ function Footer() {
         <p>Take your health and body to the next level with our comprehensive program designed to help you reach your fitness goals.</p>
         <p>Privacy Policy | © 2024 UR Physique</p>
         <div className={styles['platforms']}>
-          <FaFacebook className={styles['platform']} />
-          <FaTwitter className={styles['platform']} />
-          <FaSquareInstagram className={styles['platform']} />
-          <IoLogoYoutube className={styles['platform']} />
+          <span className={styles['platform']} >
+            <FaFacebook />
+          </span>
+          <span className={styles['platform']}>
+            <FaTwitter />
+          </span>
+          <span className={styles['platform']}>
+            <FaSquareInstagram />
+          </span>
+          <span className={styles['platform']}>
+            <IoLogoYoutube />
+          </span>
+
         </div>
       </div>
       <div className={styles.center}>

@@ -1,11 +1,14 @@
 import { Link, useLocation } from 'react-router-dom'
-import styles from './Header.module.css'
+import styles from './Navbar.module.css'
 import { useContext, useState } from 'react';
 import { AuthContext } from '../../Contexts/AuthContext';
 import logo_pic from '../../Assets/logo.png';
 import ConfirmDialog from '../../Partials/ConfirmDialog';
 import toast, { Toaster } from 'react-hot-toast';
 import { toastSuccessObj } from '../../Utils/utilObjects'
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoIosCloseCircle } from "react-icons/io";
+import nav_hero_pic from '../../Assets/hamburger-hero.jpeg'
 
 function Header() {
 
@@ -33,11 +36,35 @@ function Header() {
     logout()
   }
 
+  const [showNav, setShowNav] = useState(false)
+
+  function handleSideBar() {
+    setShowNav(true);
+  }
+
   return (
     <div className={styles.container}>
       <Toaster position="bottom-right" />
+      <div className={showNav ? `${styles['sideNavbar']}` : `${styles['sideNavbar']} ${styles['retracted']}`} onClick={() => setShowNav(false)}>
+        <span onClick={() => setShowNav(false)}><IoIosCloseCircle />
+        </span>
+        <ul>
+          <li> <Link to={'/'} className={location.pathname === '/pricing' ? styles.active : ''}>Home</Link></li>
+          <li> {isLoggedIn && <Link to={'/activities'} className={location.pathname === '/activities' ? styles.active : ''}>Activities</Link>}</li>
+          <li> {isLoggedIn && <Link to={'/schedule'} className={location.pathname === '/schedule' ? styles.active : ''}>Schedule</Link>}</li>
+          <li> {isLoggedIn && <Link to={'/gallery'} className={location.pathname === '/gallery' ? styles.active : ''}>Gallery</Link>}</li>
+          <li> <Link to={'/pricing'} className={location.pathname === '/pricing' ? styles.active : ''}>Pricing</Link></li>
+          <li> <Link to={'/contact'} className={location.pathname === '/contact' ? styles.active : ''}>Contact</Link></li>
+        </ul>
+        <img src={nav_hero_pic} alt="" />
+      </div>
 
       <div className={styles['logo-div']}>
+        <div className={styles['hamburger-menu-div']}>
+          <span>
+            <GiHamburgerMenu onClick={() => handleSideBar()} />
+          </span>
+        </div>
         <Link to={'/'}>
           <img src={logo_pic} alt="logo_pic" />
         </Link>

@@ -126,11 +126,7 @@ function Activities() {
                         <option key={i}>{day}</option>
                       ))}
                     </select>
-                  </div>
-                  {calories > 0 && <div>
-                    <p className={styles['calories-burned']}>You can burn around {calories} kcal</p>
-                    {day && <button className={styles['finish-and-select']} onClick={() => finishAndSelectBtn()}>Finish & Select</button>}
-                  </div>}
+                  </div>                
 
                   <div >
                     <p className={styles['calories-burned']}>Choose for how long ?</p>
@@ -140,9 +136,14 @@ function Activities() {
                       <button onClick={() => handleTime("plus")}>+</button>
                     </div>
                   </div>
+
+                  {calories > 0 && <div>
+                    <p className={styles['calories-burned']}>You can burn around {calories} kcal</p>
+                    {day && <button className={styles['finish-and-select']} onClick={() => finishAndSelectBtn()}>Finish & Select</button>}
+                  </div>}
                 </div>
               </div> :
-              (<ActivitiesGrid activities={activities} handleSelectSport={handleSelectSport} />)          }
+              (<ActivitiesGrid activities={activities} handleSelectSport={handleSelectSport} />)}
         </div>
       }
       {

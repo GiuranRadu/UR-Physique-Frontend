@@ -80,7 +80,7 @@
 
 .center1>h1 {
   font-size: 35px;
-  text-decoration: underline 2px;  
+  text-decoration: underline 2px;
   color: var(--neutral-light);
 }
 
@@ -93,7 +93,7 @@
 
 .center>div>ul>li:hover,
 .right>div>ul>li:hover {
-  color: var( --secondary-light);
+  color: var(--secondary-light);
   font-weight: bold;
 }
 
@@ -103,4 +103,83 @@
   gap: 20px;
   padding-left: 80px;
   width: 30%;
+}
+
+
+@media(max-width:1350px) {
+  .container h1 {
+    font-size: 25px;
+  }
+
+  .center,
+  .right {
+    padding-left: 20px;
+  }
+}
+
+
+@media(max-width:850px) {
+  .container h1 {
+    font-size: 18px;
+  }
+
+  .logo-div img {
+    height: 40%;
+  }
+
+  .left>p,
+  .center>div>ul>li,
+  .right>div>ul>li {
+    font-size: 10px;
+  }
+}
+
+
+@media(max-width:600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: 100px 40px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-div>img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Move the image to the left by half of its width */
+    height: 100px;
+  }
+
+  .left,
+  .center,
+  .right {
+    padding-left: 0px;
+    /* background-color: red; */
+    width: 80%;
+  }
+}
+
+@media(max-width:400px) {
+  .container {
+    padding: 80px 40px;
+  }
+
+  .logo-div>img {
+    height: 70px;
+  }
+
+  .platforms{
+    width: 100%;
+    gap: 30px;
+  }
+
+ .platform{
+  font-size: 30px;
+ }
+  
 }

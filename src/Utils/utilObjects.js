@@ -49,7 +49,7 @@ export const progWorkoutNutr = [
   },
   {
     name: 'SCHEDULE',
-    info: 'Life can be busy, so our scheduling is flexible and adaptable to your needs. Whether you prefer morning, afternoon, or evening sessions',
+    info: 'Life can be busy, our schedule is flexible to your needs. Whether you prefer morning, afternoon, or evening sessions',
     image: schedule_pic
   },
 

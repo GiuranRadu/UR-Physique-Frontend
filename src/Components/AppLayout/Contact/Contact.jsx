@@ -48,7 +48,7 @@ function Contact() {
           <h2>Str. Republicii 35</h2>
         </div>
       </div>
-      <div>
+      <div className={styles['maps-div']}>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2815.3745433830177!2d24.369426111517633!3d45.11874545630155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474d38c952578ce7%3A0xba02f7f24206f8ae!2sStrada%20Republicii%2037-35%2C%20R%C3%A2mnicu%20V%C3%A2lcea%20247065!5e0!3m2!1sro!2sro!4v1713080227548!5m2!1sro!2sro" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" ></iframe>
       </div>
     </div>

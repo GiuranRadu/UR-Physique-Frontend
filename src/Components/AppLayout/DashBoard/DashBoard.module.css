@@ -9,8 +9,6 @@
   grid-template-columns: 1.5fr 2fr;
   /* background-color: rgb(189, 189, 189); */
   background-color: var(--neutral-medium);
-
-
 }
 
 .section1-left,
@@ -25,7 +23,7 @@
   background-image: url('../../../Assets/hero.png');
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: 1000px;
+  background-size: 900px;
   /* position: relative; */
 }
 
@@ -42,7 +40,7 @@
   text-shadow: 0px 0px 5px black;
   /* color: var(--neutral-color); */
   color: var(--neutral-medium);
-  font-style: italic;  
+  font-style: italic;
 }
 
 .section1-right>h1 {
@@ -77,7 +75,7 @@
   /* background-color: var(--primary-color);
   color: var(--neutral-medium); */
   background-color: var(--neutral-light);
-  color:var(--accent-color);
+  color: var(--accent-color);
 }
 
 .section1-right button:hover {
@@ -91,7 +89,7 @@
   display: flex;
   flex-direction: column;
   /* background-color: rgb(189, 189, 189); */
-  background-color: var(--neutral-medium);  
+  background-color: var(--neutral-medium);
   height: 130vh;
 }
 
@@ -289,4 +287,210 @@
 .section4 {
   height: 110vh;
   background-color: rgb(189, 189, 189);
+}
+
+
+
+
+@media(max-width:1200px) {
+  .section2 {
+    /* background-color: red; */
+    height: 200vh;
+  }
+
+  .progression-workout-nutritions {
+    margin-top: -80px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .board {
+    padding-top: 0;
+  }
+
+  .board>div>h1 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .board>div>img {
+    margin-top: -25px;
+  }
+
+  .left2>div {
+    padding: 0;
+  }
+
+  .left2>div>h2 {
+    font-size: 15px;
+  }
+
+  .left1 {
+    width: 500px
+  }
+
+  .right {
+    width: 100%;
+    /* background-color: red; */
+  }
+
+  .right img {
+    height: 60%;
+  }
+}
+
+
+
+@media(max-width:850px) {
+
+  .section4 {
+    height: 90vh;
+  }
+
+
+  .section1-left {
+    /* background-color: red; */
+    background-size: 600px;
+    background-position: center center;
+  }
+
+  .section1-right {
+    /* background-color: blue; */
+    padding: 0 0 100px 50px;
+
+  }
+
+  .section1-right h2 {
+    font-size: 25px;
+  }
+
+  .section1-right>h1 {
+    font-size: 30px;
+  }
+
+  .section1-right button {
+    width: 180px;
+  }
+
+  .section2-lower-div {
+    padding: 50px;
+  }
+
+  .left1 {
+    width: 700px
+  }
+
+  .left2 {
+    width: 400px;
+  }
+
+  .right {
+    margin-right: -200px;
+    width: 400px;
+    /* background-color: red; */
+  }
+
+  .right img {
+    height: 30%;
+  }
+
+
+  .section3 {
+    height: 40vh;
+
+  }
+}
+
+@media(max-width:650px) {
+
+  .right {
+    display: none;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .left1 {
+    width: 100%
+  }
+
+  .left2 {
+    width: 100%
+  }
+
+  .section4 {
+    height: 70vh;
+  }
+}
+
+
+
+@media(max-width:420px) {
+  .section4 {
+    height: 50vh;
+  }
+
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .section1-left {
+    height: 250px;
+    background-size: 360px;
+  }
+
+  .section1-right {
+    padding: 20px;
+  }
+
+  .section1-right button {
+    width: 150px;
+    height: 20px;
+  }
+
+  .section2{
+    height: 220vh;
+  }
+
+  .section2-lower-div {
+    padding: 20px;
+  }
+
+  .left1 h1{
+    font-size: 20px;
+  }
+
+  .left2{
+    flex-direction: column;
+    height:fit-content;
+    align-items: center;
+  }
+
+  .left2>div{
+    width: 90%;
+    padding: 20px;
+    height: 150px;
+  }
+
+  .left2>div>h2 {
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  .left2>div>img {
+    width: 30%;
+  }
+
+  .left3{
+    margin-top: 40px;
+    height: 100%;
+  }
+
+  .left3 button{
+    width: 200px;
+  }
 }

@@ -1,4 +1,4 @@
-import Header from '../Header/Header'
+import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import { Outlet } from "react-router-dom"
 import styles from './AppLayout.module.css'
@@ -7,7 +7,7 @@ import styles from './AppLayout.module.css'
 function AppLayout() {
   return (
     <>
-      <Header />
+      <Navbar />
       <div className={styles.container}>
         <Outlet />
       </div>

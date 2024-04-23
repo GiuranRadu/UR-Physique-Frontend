@@ -8,6 +8,8 @@ import toast, { Toaster } from 'react-hot-toast';
 import { toastSuccessObj } from '../../../Utils/utilObjects'
 import EmptyGallery from './EmptyGallery';
 
+const API_URL = "https://ur-physique-backend.onrender.com"
+// const API_URL = "http://localhost:3000/upload"
 
 function Pagination({ updatedGallery, setUpdatedGallery, userId }) {
 
@@ -50,7 +52,7 @@ function Pagination({ updatedGallery, setUpdatedGallery, userId }) {
       isOpen: false,
     });
     try {
-      const response = await fetch(`http://localhost:3000/gallery/removePictureFromGallery/${item._id}`, {
+      const response = await fetch(`${API_URL}/gallery/removePictureFromGallery/${item._id}`, {
         method: "DELETE",
         headers: {
           'Content-Type': 'application/json'
