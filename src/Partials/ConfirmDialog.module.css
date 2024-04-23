@@ -3,13 +3,13 @@
   margin-top: -80px;
   /* width: 70%;
   height: 60%; */
-  
+
 }
 
 .DialogContent {
   background-color: var(--primary-color);
   height: 100%;
-  min-width:fit-content;
+  min-width: fit-content;
   padding: 40px 60px 0px 60px !important;
   border-radius: 4px !important;
   margin: 1px;
@@ -59,4 +59,41 @@
   background-color: red;
   color: var(--neutral-light);
   font-weight: 600;
+}
+
+
+@media(max-width:520px) {
+  .DialogContent {
+    padding: 20px 40px 0px 20px !important;
+  }
+
+
+  .DialogActions>button {
+    padding: 10px 20px;
+    width: 70px;
+    border: none;
+  }
+}
+
+
+@media(max-width:450px) {
+  .DialogContent {
+    padding: 20px 20px 0px 20px !important;
+  }
+
+  .DialogTitle {  
+    font-size: 15px !important;   
+  }
+
+
+  .DialogActions {
+    height: 50px;
+    padding: 0 0 20px 0;
+  }
+
+  .DialogActions>button {
+    padding: 5px 10px;
+    width: 50px;
+    border: none;
+  }
 }
