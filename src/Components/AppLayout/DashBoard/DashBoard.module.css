@@ -73,7 +73,8 @@
   display: flex;
   flex-direction: column;
   background-color: var(--neutral-medium);
-  height: 130vh;
+  /* height: 130vh; */
+  height: fit-content;
 }
 
 .progression-workout-nutritions {
@@ -342,7 +343,13 @@
     background-size: 600px;
     background-position: right bottom;
   }
+  .section2 {
+    height: 190vh;
+  }
 
+  .section3 {
+    height: 40vh;
+  }
 
   .section4 {
     height: 90vh;
@@ -370,11 +377,10 @@
 
   .left {
     width: 100%;
-
   }
 
   .section2-lower-div {
-    position: relative
+    position: relative;
   }
 
   .right {
@@ -382,18 +388,14 @@
     width: fit-content;
     height: 800px;
     top: -250px;
-    right:70px
+    right:70px;
+    
   }
 
   .right img {
     height: 30%;
   }
-
-
-  .section3 {
-    height: 40vh;
-
-  }
+ 
 }
 
 @media(max-width:650px) {
@@ -401,6 +403,14 @@
   .section1 {
     background-size: 600px;
     background-position: bottom left;
+  }
+
+  .section2 {
+    height: 210vh;
+  }
+
+  .section4 {
+    height: 70vh;
   }
 
   .right {
@@ -418,10 +428,7 @@
   .left2 {
     width: 100%
   }
-
-  .section4 {
-    height: 70vh;
-  }
+ 
 }
 
 
@@ -432,9 +439,6 @@
     padding: 50px 0 100px 50px;
   }
 
-  .section4 {
-    height: 50vh;
-  }
 
 
   .section1-right button {
@@ -443,11 +447,15 @@
   }
 
   .section2 {
-    height: 220vh;
+    height: 250vh;
   }
 
   .section2-lower-div {
     padding: 20px;
+  }
+
+  .section4 {
+    height: 50vh;
   }
 
   .left1 h1 {
@@ -482,5 +490,10 @@
 
   .left3 button {
     width: 200px;
+  }
+
+  .board>div>h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
   }
 }
