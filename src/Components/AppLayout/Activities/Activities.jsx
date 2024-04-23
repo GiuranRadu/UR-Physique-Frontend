@@ -7,7 +7,7 @@ import { convertMinutesToHours } from '../../../Utils/utilFunctions'
 import { AuthContext } from "../../../Contexts/AuthContext";
 import ActivitiesGrid from "./ActivitiesGrid/ActivitiesGrid";
 import toast, { Toaster } from 'react-hot-toast';
-import { toastErrorObj, toastSuccessObj } from '../../../Utils/utilObjects'
+import { toastSuccessObj } from '../../../Utils/utilObjects'
 import ConfirmDialog from '../../../Partials/ConfirmDialog';
 
 

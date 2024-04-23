@@ -164,9 +164,10 @@
 .choose-day-and-duration-div {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 10px 20px;
   /* background-color: blue; */
+  gap:20px
 }
 
 .choose-day-and-duration-div>div {
@@ -347,7 +348,7 @@
   }
 
   .carousel{
-    height: 150px;
+    height: 200px;
   }
 
   .arrow {
