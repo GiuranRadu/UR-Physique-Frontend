@@ -3,36 +3,22 @@
   flex-direction: column;
 }
 
-.section1 {
-  display: grid;
+.section1 { 
   height: 90vh;
-  grid-template-columns: 1.5fr 2fr;
-  /* background-color: rgb(189, 189, 189); */
-  background-color: var(--neutral-medium);
-}
-
-.section1-left,
-.section1-right {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
-.section1-left {
-  background-image: url('../../../Assets/hero.png');
+  background-size: 1000px;
   background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: 900px;
-  /* position: relative; */
+  background-position:  bottom right;
+  background-color: var(--neutral-medium);
+  background-image: url('../../../Assets/hero.png'); 
 }
+
 
 .section1-right {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 0 0 200px 200px;
+  padding: 50px 0 200px 100px;
 }
 
 .section1-right h2 {
@@ -81,14 +67,11 @@
 .section1-right button:hover {
   scale: 1.1;
   transition: 1s;
-
-
 }
 
 .section2 {
   display: flex;
   flex-direction: column;
-  /* background-color: rgb(189, 189, 189); */
   background-color: var(--neutral-medium);
   height: 130vh;
 }
@@ -293,8 +276,13 @@
 
 
 @media(max-width:1200px) {
+
+  .section1 {   
+    background-size: 800px;    
+    background-position: right bottom;   
+  }  
+
   .section2 {
-    /* background-color: red; */
     height: 200vh;
   }
 
@@ -340,25 +328,21 @@
   }
 }
 
+@media(max-width:900px) {
+  .section1-right h2 {
+    font-size: 25px;
+  }
+}
+
 
 
 @media(max-width:850px) {
-
   .section4 {
     height: 90vh;
   }
 
-
-  .section1-left {
-    /* background-color: red; */
-    background-size: 600px;
-    background-position: center center;
-  }
-
   .section1-right {
-    /* background-color: blue; */
-    padding: 0 0 100px 50px;
-
+    padding: 50px 0 100px 50px;
   }
 
   .section1-right h2 {
@@ -388,7 +372,6 @@
   .right {
     margin-right: -200px;
     width: 400px;
-    /* background-color: red; */
   }
 
   .right img {
@@ -403,6 +386,11 @@
 }
 
 @media(max-width:650px) {
+
+  .section1 {   
+    background-size: 600px;    
+    background-position: bottom left;   
+  }
 
   .right {
     display: none;
@@ -428,24 +416,15 @@
 
 
 @media(max-width:420px) {
+
+  .section1-right {
+    padding: 50px 0 100px 50px;
+  }
+
   .section4 {
     height: 50vh;
   }
 
-  .section1 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .section1-left {
-    height: 250px;
-    background-size: 360px;
-  }
-
-  .section1-right {
-    padding: 20px;
-  }
 
   .section1-right button {
     width: 150px;

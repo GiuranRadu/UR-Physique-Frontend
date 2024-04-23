@@ -14,9 +14,7 @@ import Testimonials from '../../../Partials/Testimonials';
 function DashBoard() {
   return (
     <div className={styles['container']}>
-      <div className={styles.section1}>
-        <div className={styles['section1-left']}>
-        </div>
+      <div className={styles.section1}>        
         <div className={styles['section1-right']}>
           <h2>Find your energy</h2>
           <h1>Track your fitness activity</h1>
