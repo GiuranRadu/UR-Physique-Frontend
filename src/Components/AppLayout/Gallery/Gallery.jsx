@@ -53,7 +53,7 @@ function Gallery() {
           body: JSON.stringify(itemToUpload)
         }).then((resp) => resp.json()).then((data) => {
           // console.log(data.user.gallery);
-          setUpdatedGallery(data.user.gallery) //! this re-renders the gallery page (helpfull)
+          setUpdatedGallery(data.user.gallery) //! this re-renders the gallery page (helpfull), but not if i change links
           if (data.status === 'success') {
             setDescription('')
             setImage(null)
