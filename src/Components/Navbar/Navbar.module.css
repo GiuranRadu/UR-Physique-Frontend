@@ -73,10 +73,6 @@
   position: absolute;
   justify-content: center;
   align-items: center;
-  /* background-image: url('../../Assets/hamburger-hero.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: black; */
   top: 0;
   left: 0;
   right: 0;
@@ -84,7 +80,6 @@
   transition: ease-out 1s;
   height: 100vh;
   z-index: 2;
-  /* box-shadow: inset 10px 10px 10px 70px var(--color-brand--4); */
 }
 
 .sideNavbar>img {
