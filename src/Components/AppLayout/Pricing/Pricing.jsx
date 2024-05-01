@@ -9,7 +9,6 @@ import { AuthContext } from "../../../Contexts/AuthContext";
 import ConfirmDialog from '../../../Partials/ConfirmDialog';
 
 
-
 function Pricing() {
   // const { categories, subscriptionPlans: { entry, moderate, hardcore } } = useLoaderData();
   const [confirmDialog, setConfirmDialog] = useState({ isOpen: false, title: '', subtitle: '' })
@@ -81,7 +80,7 @@ function Pricing() {
   )
 }
 
-//! asta se va importa in `app.jsx` si se va adauga in array-ul de paths, unde dorim
+//! se va importa in `app.jsx` si se va adauga in array-ul de paths, unde dorim, de obicei doar in componenta de aici
 //note APOI IL FOLOSIM MAI SUS cu `useLoaderData`
 // eslint-disable-next-line react-refresh/only-export-components
 export async function loader() {
