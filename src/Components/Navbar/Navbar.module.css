@@ -44,7 +44,6 @@
 
 .links-div a {
   font-size: 1.5rem;
-  /* color: var(--secondary-light); */
   font-weight: bold;
   transition: 0.4s;
   padding: 4px 8px;
@@ -85,7 +84,6 @@
 .sideNavbar>img {
   position: absolute;
   height: 100%;
-  width: 100%;
   z-index: -1;
   filter: grayscale(90%) brightness(25%);
 
@@ -166,7 +164,6 @@
 
 @media(max-width:600px) {
   .container {
-    /* background-color: red    */
     justify-content: space-between;
     padding: 0 20px;
   }
