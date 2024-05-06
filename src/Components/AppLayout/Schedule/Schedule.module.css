@@ -288,7 +288,12 @@
 
 @media(max-width:550px) {
   .days-container {
-    padding: 40px 0;
+    padding: 20px 40px;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+
   }
 
   .container {
@@ -300,22 +305,9 @@
   .week-summary-button {
     width: 50px;
     font-size: 8px;
-    padding: 2px 4px;
+    padding: 8px 12px;
     border-radius: 2px;
   }
-
-  .selected {
-    margin-top: 50px;
-    position: absolute;
-    transition: 1s;
-  }
-
-  .week-summary-button {
-    margin-top: -60px;
-    position: absolute;
-    transition: 1s;
-  }
-
 
   .activity-div>div>h3 {
     font-size: 7px;
