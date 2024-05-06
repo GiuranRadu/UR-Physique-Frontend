@@ -4,7 +4,7 @@
 }
 
 .section1 {
-  height: 90vh;
+  min-height: 90vh;
   background-size: 1000px;
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -131,7 +131,7 @@
 }
 
 .section2-lower-div {
-  height: 1000px;
+  height: fit-content;
   display: flex;
   padding: 50px 100px;
 }
@@ -277,7 +277,7 @@
   }
 
   .section2 {
-    height: 200vh;
+    height: fit-content;
   }
 
   .progression-workout-nutritions {
@@ -338,7 +338,7 @@
   }
 
   .section2 {
-    height: 190vh;
+    height: fit-content;
   }
 
   .section3 {
@@ -400,7 +400,7 @@
   }
 
   .section2 {
-    height: 210vh;
+    height: fit-content;
   }
 
   .section4 {
@@ -440,11 +440,14 @@
   }
 
   .section2 {
-    height: 250vh;
+    height: fit-content;
+    padding-bottom: 150px;
   }
 
   .section2-lower-div {
     padding: 20px;
+    height: fit-content;
+
   }
 
   .section4 {
