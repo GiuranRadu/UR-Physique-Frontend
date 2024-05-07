@@ -9,17 +9,25 @@ import equipment_img from '../../../Assets/small/equipment.png'
 import running_girl from '../../../Assets/running-girl-2.png'
 import CalculateBmi from '../../../Partials/CalculateBmi';
 import Testimonials from '../../../Partials/Testimonials';
+import { useContext } from 'react';
+import { AuthContext } from "../../../Contexts/AuthContext";
 
 
 function DashBoard() {
+
+  const { isLoggedIn } = useContext(AuthContext);
+  console.log(isLoggedIn);
+
   return (
     <div className={styles['container']}>
-      <div className={styles.section1}>        
+      <div className={styles.section1}>
         <div className={styles['section1-right']}>
           <h2>Find your energy</h2>
           <h1>Track your fitness activity</h1>
           <h2>Fit & Perfect</h2>
-          <Link to='/activities'><button>Our Classes<FaArrowRight /></button></Link>
+          <Link to={isLoggedIn ? '/activities' : '/login'}><button>Our Classes<FaArrowRight /></button></Link>
+
+
         </div>
       </div>
 
@@ -55,9 +63,8 @@ function DashBoard() {
                 <img src={open_24} alt="" />
               </div>
             </div>
-
             <div className={styles['left3']}>
-              <Link to='/activities'><button>TAKE A TOUR<FaArrowRight /></button></Link>
+              <Link to={isLoggedIn ? '/activities' : '/login'}><button>TAKE A TOUR<FaArrowRight /></button></Link>
             </div>
           </div>
           <div className={styles.right}>
