@@ -11,7 +11,7 @@ import EmptyGallery from './EmptyGallery';
 const API_URL = "https://ur-physique-backend.onrender.com"
 // const API_URL = "http://localhost:3000/upload"
 
-function Pagination({ updatedGallery, setUpdatedGallery, userId }) {
+function Pagination({ updatedGallery, setUpdatedGallery, userId , setIsLoggedIn }) {
 
   // let x = reverse(); //note: Does not work , because we are mutating the original array
   let reversedGallery = [...updatedGallery].reverse(); // Using spread operator does the trick
@@ -65,6 +65,7 @@ function Pagination({ updatedGallery, setUpdatedGallery, userId }) {
       if (response.status === 'success') {
         toast.success('Image Deleted Successfully', toastSuccessObj);
         setUpdatedGallery(response.data.gallery) //! this re-renders the gallery page (helpfull)
+        setIsLoggedIn(response.data);
         localStorage.setItem('loggedUser', JSON.stringify(response.data));
       }
     } catch (error) {

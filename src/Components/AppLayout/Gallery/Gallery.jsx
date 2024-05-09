@@ -12,7 +12,7 @@ const API_URL = "https://ur-physique-backend.onrender.com"
 // const API_URL = "http://localhost:3000/upload"
 
 function Gallery() {
-  const { isLoggedIn: { gallery, _id } } = useContext(AuthContext)
+  const { isLoggedIn: { gallery, _id }, setIsLoggedIn } = useContext(AuthContext)
   const [updatedGallery, setUpdatedGallery] = useState(gallery)
 
   const [addPhotoMode, setAddPhotoMode] = useState(false)
@@ -52,7 +52,7 @@ function Gallery() {
           },
           body: JSON.stringify(itemToUpload)
         }).then((resp) => resp.json()).then((data) => {
-          // console.log(data.user.gallery);
+          setIsLoggedIn(data.user);
           setUpdatedGallery(data.user.gallery) //! this re-renders the gallery page (helpfull), but not if i change links
           if (data.status === 'success') {
             setDescription('')
@@ -62,7 +62,6 @@ function Gallery() {
           }
           localStorage.setItem('loggedUser', JSON.stringify(data.user));
           toast.success('Image Uploaded', toastSuccessObj);
-          // location.reload();
         })
       }
     } catch (error) {
@@ -102,7 +101,7 @@ function Gallery() {
                     <input onChange={imageHandler} type="file" id='file-input' hidden />
                   </label>
                 </div>
-                
+
                 <div>
                   <input value={description} type="text" placeholder="Type here a description..." onChange={(e) => setDescription(e.target.value)} />
                 </div>
@@ -116,7 +115,7 @@ function Gallery() {
 
           </div>
           :
-          <Pagination updatedGallery={updatedGallery} setUpdatedGallery={setUpdatedGallery} userId={_id} />
+          <Pagination updatedGallery={updatedGallery} setUpdatedGallery={setUpdatedGallery} userId={_id} setIsLoggedIn={setIsLoggedIn} />
       }
     </div>
   )
