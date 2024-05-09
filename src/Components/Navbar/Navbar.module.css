@@ -118,12 +118,24 @@
   color: white;
 }
 
+.user-logout-div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-logout-div>p {
+  min-width: fit-content;
+}
+
 @media(max-width:1000px) {
   .links-div {
     gap: 30px;
   }
 
-  
+
 }
 
 @media(max-width:880px) {
@@ -150,13 +162,13 @@
     gap: 15px;
   }
 
-  .logo-div{
+  .logo-div {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .logo-div img{
+  .logo-div img {
     height: 60px;
   }
 }

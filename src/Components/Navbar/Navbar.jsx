@@ -9,6 +9,8 @@ import { toastSuccessObj } from '../../Utils/utilObjects'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoIosCloseCircle } from "react-icons/io";
 import nav_hero_pic from '../../Assets/hamburger-hero.jpeg'
+import { FaUser } from "react-icons/fa";
+
 
 function Header() {
 
@@ -86,8 +88,9 @@ function Header() {
         </Link>
       </div>}
 
-      {isLoggedIn && <div>
+      {isLoggedIn && <div className={styles['user-logout-div']}>
 
+        <p>{isLoggedIn.name} <FaUser /> </p>
         <button onClick={logoutBtn}>Logout</button>
 
       </div>}
