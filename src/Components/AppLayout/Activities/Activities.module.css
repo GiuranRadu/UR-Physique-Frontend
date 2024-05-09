@@ -6,6 +6,10 @@
   width: 100%;
   position: relative;
   padding: 20px;
+  max-width: 1600px;
+  margin:0 auto;
+  /* background-color: beige  */
+
 }
 
 .fixed-select {

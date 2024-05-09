@@ -18,7 +18,7 @@ function Pagination({ updatedGallery, setUpdatedGallery, userId , setIsLoggedIn 
   const [confirmDialog, setConfirmDialog] = useState({ isOpen: false, title: '', subtitle: '' })
 
   const [currentPage, setCurrentPage] = useState(1)
-  const itemsPerPage = 2; // select how many items to display per page
+  const itemsPerPage = 4; // select how many items to display per page
   const lastIndex = currentPage * itemsPerPage; // 1 * 6 = 6 || 2 * 6 = 12
   const firstIndex = lastIndex - itemsPerPage; // 6 - 6 = 0  || 12 - 6 = 6
   const records = reversedGallery.slice(firstIndex, lastIndex); // set which items to display 1-2, 3-4 or 5-6 or 7-8 etc...
