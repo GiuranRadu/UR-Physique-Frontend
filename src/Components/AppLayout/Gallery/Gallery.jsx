@@ -14,6 +14,7 @@ const API_URL = "https://ur-physique-backend.onrender.com"
 function Gallery() {
   const { isLoggedIn: { gallery, _id }, setIsLoggedIn } = useContext(AuthContext)
   const [updatedGallery, setUpdatedGallery] = useState(gallery)
+  const [isLoading, setIsLoading] = useState(false)
 
   const [addPhotoMode, setAddPhotoMode] = useState(false)
   const [description, setDescription] = useState('');
@@ -27,6 +28,7 @@ function Gallery() {
       if (!image) return toast.error('No image', toastErrorObj);
       if (!description) return toast.error('No description', toastErrorObj);
 
+      setIsLoading(true)
       let formData = new FormData();
       formData.append('picture', image)
 
@@ -52,6 +54,7 @@ function Gallery() {
           },
           body: JSON.stringify(itemToUpload)
         }).then((resp) => resp.json()).then((data) => {
+          setIsLoading(false)
           setIsLoggedIn(data.user);
           setUpdatedGallery(data.user.gallery) //! this re-renders the gallery page (helpfull), but not if i change links
           if (data.status === 'success') {
@@ -63,9 +66,11 @@ function Gallery() {
           localStorage.setItem('loggedUser', JSON.stringify(data.user));
           toast.success('Image Uploaded', toastSuccessObj);
         })
+
       }
     } catch (error) {
       toast.error('Failed while uploading image', toastErrorObj);
+      setIsLoading(false)
     }
   }
 
@@ -107,7 +112,8 @@ function Gallery() {
                 </div>
 
                 <div>
-                  <button className={styles['upload-btn']} onClick={uploadImagetoDB}>Upload</button>
+                  <button className={!isLoading ? styles['upload-btn'] : styles['upload-btn-loading']} onClick={uploadImagetoDB} disabled={isLoading}>  {isLoading ? 'Uploading...' : 'Upload'}
+                  </button>
                 </div>
 
               </div>

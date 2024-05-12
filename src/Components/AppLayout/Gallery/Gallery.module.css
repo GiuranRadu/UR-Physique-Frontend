@@ -282,7 +282,19 @@ button {
   font-size: 16px;
   border-radius: 4px;
   transition: 0.5s;
+}
 
+.upload-btn-loading{
+  width: 100%;
+  padding: 10px 30px;
+  background-color: rgb(101, 101, 103);
+  border: none;
+  color: rgb(117, 151, 148);
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: 0.5s;
+  cursor:not-allowed;
 }
 
 .upload-btn:hover {
