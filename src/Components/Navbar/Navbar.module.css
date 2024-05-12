@@ -78,15 +78,16 @@
   bottom: 0;
   transition: ease-out 1s;
   height: 100vh;
-  z-index: 2;
+  z-index: 2; 
 }
 
 .sideNavbar>img {
   position: absolute;
   height: 100%;
+  width: 100%;
+  object-fit: cover;
   z-index: -1;
   filter: grayscale(90%) brightness(25%);
-
 }
 
 .retracted {
@@ -105,13 +106,12 @@
   font-weight: bold;
   font-size: 50px;
   color: white;
-
 }
 
 .sideNavbar>ul>li {
   list-style: none;
-  font-size: 30px;
-  margin-bottom: 15px;
+  font-size: 25px;
+  margin-bottom: 20px;
 }
 
 .sideNavbar>ul>li>a {
