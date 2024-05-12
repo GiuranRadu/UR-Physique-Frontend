@@ -90,6 +90,7 @@
   bottom: 20px;
   right: 20px;
   padding: 4px 8px;
+  z-index: -1;
 }
 
 .forgot-register-div>a {
