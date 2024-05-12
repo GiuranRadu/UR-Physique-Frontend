@@ -51,7 +51,7 @@ function Header() {
         <span onClick={() => setShowNav(false)}><IoIosCloseCircle />
         </span>
         <ul>
-          <li> <Link to={'/'} className={location.pathname === '/pricing' ? styles.active : ''}>Home</Link></li>
+          <li> <Link to={'/'} className={location.pathname === '/' ? styles.active : ''}>Home</Link></li>
           <li> {isLoggedIn && <Link to={'/activities'} className={location.pathname === '/activities' ? styles.active : ''}>Activities</Link>}</li>
           <li> {isLoggedIn && <Link to={'/schedule'} className={location.pathname === '/schedule' ? styles.active : ''}>Schedule</Link>}</li>
           <li> {isLoggedIn && <Link to={'/gallery'} className={location.pathname === '/gallery' ? styles.active : ''}>Gallery</Link>}</li>
